@@ -1,0 +1,400 @@
+body {
+  background-color: #EAEAEA;
+  font-family: 'Orbitron', sans-serif;
+  width: 100vw;
+}
+
+nav {
+  align-items: center;
+  background-color: #15151C;
+  color: #EAEAEA;
+  display: grid;
+  font-size: 2em;
+  grid-template-columns: 15% 15% 15% 15% 15% 25%;
+  grid-template-rows: 35% 65%;
+  height: 20vh;
+  text-align: center;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header-link {
+  font-size: .7em;
+  vertical-align: bottom;
+}
+
+.header-link:hover {
+  color: #EC0000;
+  cursor: pointer;
+}
+
+.menu {
+  position: absolute;
+  visibility: hidden;
+}
+
+.profile-link {
+  font-size: .6em;
+  grid-column-start: 6;
+  grid-column-end: 6;
+  margin-right: 3vw;
+  text-align: right;
+}
+
+.nav-icons {
+  filter: invert(90%);
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.left-nav-icons {
+  height: 25px;
+}
+
+.car-icon {
+  height: 50px;
+}
+
+.left-link {
+  margin-top: 25%;
+}
+
+.nav-image {
+  grid-column-start: 6;
+  grid-column-end: 6;
+  margin: 5%;
+  text-align: right;
+}
+
+.nav-logo {
+  height: 60px;
+}
+
+main {
+  color: #15151C;
+}
+
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 0;
+  width: 90%;
+}
+
+.main-header {
+  margin: 2em auto 0 auto;
+  max-width: 1400px;
+  width: 90%;
+}
+
+.card {
+  background-color: #fcfcfc;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .3);
+  border: none;
+  height: 45%;
+  margin: 40px 0 0 0;
+  min-height: 470px;
+  width: 22%;
+  transition-duration: .2s;
+}
+
+.card:hover {
+  box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(0, 0, 0, .5);
+  cursor: pointer;
+}
+
+.card9 {
+  visibility: hidden;
+  margin-bottom: 50px;
+}
+
+fieldset {
+  border: none;
+}
+
+.card-top {
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-top1 {
+  background-image: url(images/vettel.jpg);
+}
+
+.card-top2 {
+  background-image: url(images/ricciardo.jpg);
+}
+
+.card-top3 {
+  background-image: url(images/hamilton.jpg);
+}
+
+.card-top4 {
+  background-image: url(images/bottas.jpg);
+}
+
+.card-top5 {
+  background-image: url(images/alonso.jpg);
+}
+
+.card-top6 {
+  background-image: url(images/verstappen.jpg);
+}
+
+.card-top7 {
+  background-image: url(images/raikkonen.jpg);
+}
+
+.card-top8 {
+  background-image: url(images/hulkenberg.jpg);
+}
+
+.card-top9 {
+  background-image: url(images/astley.jpg);
+}
+
+.card-top {
+  height: 35%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.steering-wheel-icon {
+  height: 35%;
+  padding: 5% 3%;
+}
+
+.steering-wheel-icon:hover {
+  transform: rotate(50deg);
+  transition-duration: .5s;
+}
+
+.views-link {
+  background: linear-gradient(#fcfcfc, transparent);
+  font-size: 1.2em;
+  float: right;
+  height: 50%;
+  margin: 0% 4% 0 25%;
+  padding: 5px 4px 0 4px;
+}
+
+.number {
+  color: #EC0000;
+  margin: 0;
+}
+
+.number:hover {
+  cursor: pointer;
+  color: #15151c;
+}
+
+.card-bottom {
+  display: inline;
+  margin: 0;
+  padding: 0 5%;
+  width: 90%;
+  height: 65%;
+}
+
+.card-title {
+  font-size: 1.25em;
+  margin-bottom: 0;
+}
+
+.card-date {
+  font-family: 'Exo', sans-serif;
+}
+
+.link-container {
+  background-color: #EAEAEA;
+  width: 100%;
+  padding: 5px 0 5px 0;
+}
+
+.card-link {
+  color: #0000EE;
+  text-decoration: underline;
+}
+
+.playlist {
+  font-family: 'Exo', sans-serif;
+}
+
+.card-playlist {
+  font-size: 1.25em;
+}
+
+.attachments {
+  font-family: 'Exo', sans-serif;
+  margin: 0;
+}
+
+.card-number {
+  color: #EC0000;
+  font-size: 2em;
+  font-weight: 700;
+  margin-top: 5%;
+}
+
+@media screen and (max-width: 1250px) {
+  nav {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 35% 65%;
+  }
+
+  .profile-link {
+    font-size: .5em;
+  }
+
+  .nav-logo {
+    height: 50px;
+    margin-right: 0;
+  }
+
+  .card-section {
+    width: 95%;
+  }
+
+  .main-header {
+    width: 95%;
+  }
+
+  .card {
+    width: 30%;
+  }
+
+  .card9 {
+    visibility: visible;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .left-link {
+    font-size: .5em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  nav {
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 65% 35%;
+  }
+
+  .nav-image {
+    margin: 50px calc(50% - 100px);
+    position: absolute;
+    top: 0;
+    width: 10%;
+  }
+
+  .left-link {
+    font-size: .75em;
+    margin: 0;
+  }
+
+  .card-section {
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .main-header {
+    text-align: center;
+    width: 100%;
+  }
+
+  .card {
+    margin-top: 20px;
+    min-height: 440px;
+  }
+
+}
+
+@media screen and (max-width: 770px) {
+  .profile-icon {
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .card {
+    width: 45%;
+  }
+
+  .card9 {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .nav-image {
+    top: 60px;
+  }
+
+  .profile-icon {
+    top: 25px;
+    right: 25px;
+  }
+
+  .shares-link,
+  .playlists-link,
+  .videos-link {
+    display: none;
+  }
+
+  .menu {
+    height: 30px;
+    left: 25px;
+    top: 25px;
+    visibility: visible;
+  }
+
+  .menu:hover,
+  .profile-icon:hover {
+    filter: invert(70%);
+  }
+
+  .nav-logo:hover {
+    filter: invert(10%);
+  }
+
+  .main-header {
+    margin: 30px auto 0 auto;
+  }
+
+  .card {
+    height: 500px;
+    width: 65%;
+  }
+
+  .card9 {
+    visibility: visible;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .card {
+    height: 430px;
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 319px) {
+  body {
+    display: none;
+  }
+}
+
+
+
